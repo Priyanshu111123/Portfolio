@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyanshu Raj Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+    }
+    .header {
+      background-color: #ff8c00;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      font-size: 3rem;
+      margin: 10px 0;
+    }
+    .header p {
+      font-size: 1.5rem;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .about {
+      background-color: #f7d794;
+    }
+    .contact {
+      background-color: #82589f;
+      color: white;
+    }
+    .marks {
+      background-color: #ffeaa7;
+    }
+    .projects {
+      background-color: #3dc1d3;
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background-color: #ffb8b8;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    .project-card:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    input, button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #ff9ff3;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <img src="Priyanshu.jpg" alt="Profile Picture">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Creative Developer & Designer</p>
+  </div>
+
+  <!-- About Section -->
+  <div class="section about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I am Priyanshu Raj. I’m a passionate developer and designer who loves creating engaging
+      web experiences. My expertise includes React, JavaScript, and backend development with Node.js.
+    </p>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="section contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Marks Section -->
+  <div class="section marks">
+    <h2>Academic Performance</h2>
+    <ul>
+      <li><strong>Class 10 (ICSE)</strong>: 95%</li>
+      <li><strong>Class 12 (ISC)</strong>: 89.5%</li>
+      <li><strong>Current B.Tech (CSE)</strong>: 8.33 CGPA</li>
+    </ul>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="section projects">
+    <h2>My Projects</h2>
+    <div class="project-card" onclick="window.open('https://example.com/chess-game', '_blank')">
+      <h3>Chess Game</h3>
+      <p>A web-based chess game using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project-card" onclick="window.open('https://example.com/code-editor', '_blank')">
+      <h3>Code Editor</h3>
+      <p>A browser-based code editor built with Node.js.</p>
+    </div>
+    <div class="project-card" onclick="window.open('https://example.com/marketing-website', '_blank')">
+      <h3>Marketing Website</h3>
+      <p>A modern marketing website created with React and styled-components.</p>
+    </div>
+  </div>
+</body>
+</html>
